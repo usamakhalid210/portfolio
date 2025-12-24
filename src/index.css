@@ -1,3 +1,6 @@
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -121,9 +124,14 @@ justify-content: center;
 
 }
 
+.ex-items .left img{
+  width: 60px;
+}
+
 /* skills  */
 .skills{
 width: 900px;
+/* padding: 60px 0px; */
 
 }
 
@@ -131,11 +139,73 @@ width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    /* width: 70px; */
+
+    
+    
+    /* background-color: yellow; */
+}
+
+.skills .items .item {
+  width:calc(33.33%);
+  background-color: black;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius:10px ;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
 }
 
 
 
 
+
+
+/* .skills .items .item img{
+  display: flex;
+  align-items: center;
+  width: 70px;
+} */
 .skills .items .item img{
   width: 70px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+
+
+
+
+
+
+
+/* contact */
+.contact-icon{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon .item{
+  background-color: black;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid yellow;
+  
+}
+.contact-icon .item:hover{
+background-color: var(--bg-color);
+box-shadow: var(--box-shadow);
+}
+
+.contact-icon .item .icons{
+  font-size: 2rem;
 }
